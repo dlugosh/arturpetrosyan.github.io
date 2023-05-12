@@ -1,0 +1,189 @@
+body {
+    font-family: sans-serif;
+     background-size: 300% 300%;
+  background-image: linear-gradient(45deg, white 0%, black 25%, white 51%, white 100%);
+  -webkit-animation: AnimateBG 20s ease infinite;
+          animation: AnimateBG 20s ease infinite;
+}
+
+
+@-webkit-keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@keyframes AnimateBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+h1 {
+  font-size: 70px;
+  font-weight: 600;
+  color: #fdfdfe;
+  text-shadow: 0px 0px 5px #b393d3, 0px 0px 10px #b393d3, 0px 0px 10px #b393d3,
+    0px 0px 20px #b393d3;
+    text-align: center;
+}
+.header {
+    height: 100vh;
+    background-image: linear-gradient(
+     rgba(8, 32, 246, 0.7),
+     rgba(239, 239, 239, 0));
+   
+    background-size: cover;
+    background-position: top;
+    position: relative;
+
+
+    clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
+}
+
+p {
+  text-align: center;
+  font-family: monospace;
+  font-size: 16px;
+  color: red;
+}
+
+.brand-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+
+.brand { font-size: 20px;}
+
+
+.text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+.heading-primary {
+    color: rgb(255, 0, 0);
+    text-transform: uppercase;
+
+
+    backface-visibility: hidden;
+    margin-bottom: 30px;
+}
+
+nav {
+  color: white;
+  text-align: center;
+}
+
+ol {
+  list-style-position:inside;
+  text-align: center;
+}
+li {
+  text-align: center;
+  font-family: monospace;
+  font-size: 30px;
+}
+li:hover {
+  color: red;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-primary:hover {
+  color: black;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.footer {
+background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(255, 255, 255, 0));
+padding: 30px 0px;
+font-family: 'Play', sans-serif;
+text-align:center;
+size: 100px;
+}
+
+
+.footer .row{
+width:100%;
+margin:1% 0%;
+padding:0.6% 0%;
+color:red;
+font-size:0.8em;
+}
+
+
+.footer .row a{
+text-decoration:none;
+color:red;
+transition:0.5s;
+}
+
+
+.footer .row a:hover{
+color:#fff;
+}
+
+
+.footer .row ul{
+width:100%;
+}
+
+
+.footer .row ul li{
+display:inline-block;
+margin:0px 30px;
+}
+
+
+.footer .row a i{
+font-size:2em;
+margin:0% 1%;
+}
+
+
+@media (max-width:720px) {
+.footer{
+text-align:left;
+padding:5%;
+}
+.footer .row ul li{
+display:block;
+margin:10px 0px;
+text-align:left;
+}
+.footer .row a i{
+margin:0% 3%;
+}
+}
