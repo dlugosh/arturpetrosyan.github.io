@@ -43,7 +43,7 @@ h1 {
     text-align: center;
 }
 .header {
-    height: 100vh;
+    height: 150px;
     background-image: linear-gradient(
      rgba(8, 32, 246, 0.7),
      rgba(239, 239, 239, 0));
@@ -52,8 +52,6 @@ h1 {
     background-position: top;
     position: relative;
 
-
-    clip-path: polygon(0 0, 100% 0, 100% 100vh, 0 100%);
 }
 
 p {
